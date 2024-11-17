@@ -85,7 +85,6 @@ update_time: "Tue Sep 24 19:05:19 2024"
 ## 测试用词
     ceyj 澈言  
     mdwh 美读文化  
-    yqsg 颜庆胜  
     qmuea 钱
 
 只要能打出这些词汇，便说明配置正确
