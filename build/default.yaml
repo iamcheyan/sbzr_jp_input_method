@@ -2,7 +2,7 @@ __build_info:
   rime_version: 1.9.0
   timestamps:
     default: 1732775272
-    default.custom: 1732775272
+    default.custom: 1734486893
     key_bindings: 1732775273
     key_bindings.custom: 0
     punctuation: 1732775273
@@ -17,6 +17,10 @@ ascii_composer:
     Shift_L: inline_ascii
     Shift_R: commit_text
 config_version: 0.40
+grammar:
+  collocation_max_length: 5
+  collocation_min_length: 2
+  language: "amz-v2n3m1-zh-hans"
 key_binder:
   bindings:
     - {accept: Return, send: "Shift+Return", when: has_menu}
@@ -105,6 +109,7 @@ recognizer:
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
 schema_list:
   - schema: sbzr
+  - schema: sbzz
   - schema: jaroomaji
 switcher:
   abbreviate_options: true
@@ -115,3 +120,7 @@ switcher:
     - "Control+Shift+grave"
     - F4
   option_list_separator: ""
+translator:
+  contextual_suggestions: true
+  max_homographs: 7
+  max_homophones: 7
