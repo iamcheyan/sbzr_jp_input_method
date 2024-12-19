@@ -1,9 +1,9 @@
 __build_info:
   rime_version: 1.9.0
   timestamps:
-    default: 1732775272
-    default.custom: 1734486893
-    key_bindings: 1732775273
+    default: 1734582260
+    default.custom: 1734582502
+    key_bindings: 1734582261
     key_bindings.custom: 0
     punctuation: 1732775273
     punctuation.custom: 0
@@ -17,17 +17,11 @@ ascii_composer:
     Shift_L: inline_ascii
     Shift_R: commit_text
 config_version: 0.40
-grammar:
-  collocation_max_length: 5
-  collocation_min_length: 2
-  language: "amz-v2n3m1-zh-hans"
 key_binder:
   bindings:
     - {accept: Return, send: "Shift+Return", when: has_menu}
     - {accept: "Shift+Return", send: Return, when: has_menu}
     - {accept: "Control+Shift+1", select: .next, when: always}
-    - {accept: "Control+Shift+j", select: jaroomaji, when: always}
-    - {accept: "Control+Shift+J", select: jaroomaji, when: always}
     - {accept: "Control+Shift+k", select: sbzr, when: always}
     - {accept: "Control+Shift+K", select: sbzr, when: always}
     - {accept: minus, send: Page_Up, when: has_menu}
@@ -109,8 +103,6 @@ recognizer:
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
 schema_list:
   - schema: sbzr
-  - schema: sbzz
-  - schema: jaroomaji
 switcher:
   abbreviate_options: true
   caption: "〔方案选单〕"
@@ -120,7 +112,3 @@ switcher:
     - "Control+Shift+grave"
     - F4
   option_list_separator: ""
-translator:
-  contextual_suggestions: true
-  max_homographs: 7
-  max_homophones: 7
